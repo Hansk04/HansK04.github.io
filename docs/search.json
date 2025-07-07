@@ -26,5 +26,33 @@
     "title": "Hans Kuthy",
     "section": "About me",
     "text": "About me\n\n\nFrom Mauritius to Northwestern, with a mission to make data meaningful.\nI love applying ML techniques to real‑world data—especially in sports and social good—and I enjoy working in both R and Python. When not coding, you’ll find me exploring new analytics papers or writing blog posts on the latest LLM hacks.\n\n\nFirst ranked STEM Scholar · State of Mauritius Scholar · 2023\n\n\n\n\nAt Northwestern I’m deepening my skills in predictive modeling and ethical data storytelling. I’m driven by the belief that data is most powerful when shared transparently and applied responsibly.\n\n\nB.S. in Data Science · Northwestern University · Class of 2028"
+  },
+  {
+    "objectID": "proj/proj1.html",
+    "href": "proj/proj1.html",
+    "title": "Soccer Video Analysis with Roboflow",
+    "section": "",
+    "text": "View on GitHub \n\nThis project explores how data science can deepen our understanding of football tactics and performance.\nUsing detailed player tracking data and event logs, I built an expected goals (xG) model to estimate the likelihood of each shot resulting in a goal. The project covers:\n\nData cleaning & feature engineering\n\nExploratory data analysis to reveal team and player trends\n\nTraining machine learning models (logistic regression & tree-based) to predict xG\n\nVisualizations to explain spatial patterns and shot quality\n\nThe goal is to bridge advanced analytics and the game’s intuitive flow, offering coaches, analysts, and fans deeper insights into attacking efficiency and defensive weaknesses."
+  },
+  {
+    "objectID": "proj/proj1.html#technical-highlights",
+    "href": "proj/proj1.html#technical-highlights",
+    "title": "Soccer Video Analysis with Roboflow",
+    "section": "🔧 Technical highlights",
+    "text": "🔧 Technical highlights\n\nPython (pandas, scikit-learn, matplotlib, seaborn)\nSpatial data processing & heatmaps\nModel evaluation with ROC curves and calibration plots\nInteractive dashboards (future work)"
+  },
+  {
+    "objectID": "proj/proj1.html#results-impact",
+    "href": "proj/proj1.html#results-impact",
+    "title": "Soccer Video Analysis with Roboflow",
+    "section": "📊 Results & Impact",
+    "text": "📊 Results & Impact\nThe model provided actionable insights like:\n\nIdentifying underperforming strikers based on xG vs. actual goals\n\nHighlighting high-probability shooting zones\n\nInforming coaching decisions on player positioning and shot selection"
+  },
+  {
+    "objectID": "proj/proj1.html#whats-next",
+    "href": "proj/proj1.html#whats-next",
+    "title": "Soccer Video Analysis with Roboflow",
+    "section": "📌 What’s next",
+    "text": "📌 What’s next\n\nExpand to multi-season data for more robust trends\nIntegrate tracking data to analyze off-ball movement\nDevelop a web app for interactive exploration"
   }
 ]
