@@ -70,4 +70,4 @@ At Northwestern I'm deepening my skills in predictive modeling and ethical data 
 
 ## <!-- end grid -->
 
----
+------------------------------------------------------------------------

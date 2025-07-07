@@ -4,7 +4,7 @@
     "href": "portfolio.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Learn more →\n\n\n\n\n\n\nLearn more →\n\n\n\n\n\n\nLearn more →\n\n\n\n\n\n\nLearn more →"
+    "text": "Learn more →\n\n\n\nLearn more →\n\n\n\nLearn more →\n\n\n\nLearn more →"
   },
   {
     "objectID": "cv.html",
@@ -12,5 +12,19 @@
     "title": "Curriculum Vitae",
     "section": "",
     "text": "<p>Your browser doesn’t support PDF embedding. <a href=\"assets/CV/cv.pdf\">Download the CV instead</a>.</p>"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hans Kuthy",
+    "section": "",
+    "text": "Hey, I’m Hans\n\nThanks for stopping by!\nI’m a data science major at Northwestern University, originally from Mauritius.\nIn 2023 I earned a full government scholarship as the top‑ranked STEM student nationally.\nMy interests span machine learning, large language models (LLMs), and sports analytics.\nGet in touch →"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Hans Kuthy",
+    "section": "About me",
+    "text": "About me\n\n\nFrom Mauritius to Northwestern, with a mission to make data meaningful.\nI love applying ML techniques to real‑world data—especially in sports and social good—and I enjoy working in both R and Python. When not coding, you’ll find me exploring new analytics papers or writing blog posts on the latest LLM hacks.\n\n\nFirst ranked STEM Scholar · State of Mauritius Scholar · 2023\n\n\n\n\nAt Northwestern I’m deepening my skills in predictive modeling and ethical data storytelling. I’m driven by the belief that data is most powerful when shared transparently and applied responsibly.\n\n\nB.S. in Data Science · Northwestern University · Class of 2028"
   }
 ]
