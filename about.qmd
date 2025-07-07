@@ -1,0 +1,73 @@
+---
+title: "Hans Kuthy"
+subtitle: "Data Science Major at NorthwesternU"
+image: assets/profile.jpeg
+image-alt: "Hans Kuthy standing in front of a city skyline"
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: rounded
+  id: hero-heading
+  links:
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://linkedin.com/in/Hanskuthy           # ← update
+    - icon: github
+      aria-label: "GitHub"
+      href: https://github.com/HansK04              # ← update
+    - icon: envelope
+      aria-label: "Email"
+      href: mailto:hanskuthy33@gmail.com    
+format:
+  html:
+    page-layout: full
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/about.css">
+resources:
+  - ../assets/about.css
+---
+
+::: {#hero-heading}
+::: h1
+Hey, I'm Hans
+:::
+
+Thanks for stopping by!
+
+I'm a data science major at **Northwestern University**, originally from Mauritius.\
+In 2023 I earned a full government scholarship as the top‑ranked STEM student nationally.\
+My interests span machine learning, large language models (LLMs), and sports analytics.
+
+[Get in touch →](mailto:hanskuthy33@gmail.com) {{< fa feather-pointed >}}
+:::
+
+## About me
+
+::: grid
+::: {#about-me-1 .g-col-6}
+**From Mauritius to Northwestern, with a mission to make data meaningful.**
+
+I love applying ML techniques to real‑world data---especially in sports and social good---and I enjoy working in both R and Python. When not coding, you'll find me exploring new analytics papers or writing blog posts on the latest LLM hacks.
+
+<ul class="fa-ul">
+
+<li><i class="fa-solid fa-award"></i>First ranked STEM Scholar · State of Mauritius Scholar · 2023</li>
+
+</ul>
+:::
+
+::: {#about-me-2 .g-col-6}
+At Northwestern I'm deepening my skills in predictive modeling and ethical data storytelling. I'm driven by the belief that data is most powerful when shared transparently and applied responsibly.
+
+<ul class="fa-ul">
+
+<li><i class="fa-solid fa-graduation-cap"></i>B.S. in Data Science · Northwestern University · Class of 2028</li>
+
+</ul>
+:::
+:::
+
+## <!-- end grid -->
+
+---

@@ -1,0 +1,51 @@
+---
+title: "Hans Kuthy"
+pagetitle: "Hans Kuthy"
+subtitle: "Data Science Major at Northwestern University"
+image: assets/homepic.jpg  # <- replace with your hero image
+image-alt: "Abstract data visualization depicting the Chicago skyline in a circular form"
+
+twitter-card:
+  title: Hans Kuthy
+  description: |
+    Data science major, scholarship recipient, and sports‑analytics enthusiast.
+  image: assets/hans/img/hans-social.png        # <- replace with a social‑share image
+
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://linkedin.com/in/hanskuthy        # <- update if different
+    - icon: github
+      aria-label: "GitHub"
+      href: https://github.com/HansK04/             # <- update if different
+    - icon: envelope
+      aria-label: "Email"
+      href: mailto:hanskuthy33@gmail.com       # <- update with your e‑mail
+page-layout: full
+
+execute:
+  freeze: false
+  echo: false
+  warning: false
+
+header-includes: >
+  <link rel="stylesheet" href="assets/index.css">
+resources:
+  - assets/index.css
+---
+
+<br><br>
+
+::: {#hero-heading}
+I am a **data science major** at **Northwestern University**, originally from **Mauritius**. In 2023 I earned a full scholarship from the Mauritian government as the top‑ranked STEM student nationally. My academic interests span large language models, machine learning, and sports analytics. I aim to harness data‑driven insights to solve real‑world problems and to inspire others through teaching and community engagement.
+
+[Learn more about me →](/about.qmd){.about-links .subtitle}
+:::
+
+<!-- hero-heading -->
+
+------------------------------------------------------------------------

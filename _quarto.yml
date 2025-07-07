@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Hans Kuthy"
+  page-navigation: true
+  favicon: assets/logo.png   # <- add your favicon
+  navbar:
+    #left:
+    right:
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Portfolio
+        href: portfolio.qmd
+      - icon: github
+        href: https://github.com/HansK04
+      - icon: linkedin
+        href: https://linkedin.com/in/Hanskuthy
+      - icon: instagram
+        href: https://instagram.com/hanskuthy
+
+# Global defaults for pages
+format:
+  html:
+    theme: 
+      # morph,cyborg, flatly is the opposite of darkly 
+      light: morph
+      dark: cyborg
+    toggle: true
+    css: assets/index.css

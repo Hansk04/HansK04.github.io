@@ -1,0 +1,44 @@
+---
+title: "Portfolio"
+---
+
+## Latest Projects...
+
+::: grid
+::: g-col-3
+#### Soccer Tracking & xG Modeling
+
+::: {#soccer-tracking}
+:::
+
+[Learn more →](/proj1){.about-links .subtitle}
+:::
+
+::: g-col-3
+#### Product Design: Smart Nightstand
+
+::: {#sports-design}
+:::
+
+[Learn more →](/proj2){.about-links .subtitle}
+:::
+
+::: g-col-3
+#### Kreol Morisyen: Language & Identity
+
+::: {#kreol-research}
+:::
+
+[Learn more →](/proj3){.about-links .subtitle}
+:::
+
+::: g-col-3
+#### Pirates in Mauritius: History & Archives
+
+::: {#pirates}
+:::
+
+[Learn more →](/proj4){.about-links .subtitle}
+:::
+:::
+---
