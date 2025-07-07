@@ -11,20 +11,6 @@ twitter-card:
     Data science major, scholarship recipient, and sports‑analytics enthusiast.
   image: assets/hans/img/hans-social.png        # <- replace with a social‑share image
 
-about:
-  template: solana
-  image-width: 28em
-  id: hero-heading
-  links:
-    - icon: linkedin
-      aria-label: "LinkedIn"
-      href: https://linkedin.com/in/hanskuthy        # <- update if different
-    - icon: github
-      aria-label: "GitHub"
-      href: https://github.com/HansK04/             # <- update if different
-    - icon: envelope
-      aria-label: "Email"
-      href: mailto:hanskuthy33@gmail.com       # <- update with your e‑mail
 page-layout: full
 
 execute:
