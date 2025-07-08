@@ -7,6 +7,7 @@ website:
   page-navigation: true
   favicon: assets/logo.png   # <- add your favicon
   navbar:
+    logo: assets/logo.png
     #left:
     right:
       - text: Home
