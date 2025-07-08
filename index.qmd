@@ -34,7 +34,7 @@ I am a **data science major** at **Northwestern University**, originally from **
 :::
 
 ::: {.column width="40%"}
-![Hans Kuthy](assets/homepic.jpg){alt="Hans Kuthy - Data Science Student"}
+![](assets/homepic.jpg){alt="Hans Kuthy - Data Science Student"}
 :::
 
 ## <!-- hero-heading -->
