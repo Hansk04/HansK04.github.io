@@ -19,5 +19,11 @@
   },
   "proj/proj1.qmd": {
     "proj1.html": "070a70c7"
+  },
+  "proj/proj2.qmd": {
+    "proj2.html": "fd13f679"
+  },
+  "proj/proj1/index.qmd": {
+    "index.html": "374fb6c9"
   }
 }

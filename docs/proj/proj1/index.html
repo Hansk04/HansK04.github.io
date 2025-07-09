@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-06-01">
+<meta name="description" content="Using detailed player tracking data and machine learning to model expected goals (xG) and reveal tactical insights.">
 
-<title>Hans Kuthy - Soccer Video Analysis with Roboflow</title>
+<title>Hans Kuthy - Soccer Tracking &amp; xG Modeling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,10 +75,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/logo.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/logo.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Hans Kuthy</span>
     </a>
   </div>
@@ -86,16 +88,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.html">CV</a>
+    <a class="nav-link" href="../../cv.html">CV</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../portfolio.html">Portfolio</a>
+    <a class="nav-link" href="../../portfolio.html">Portfolio</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/HansK04"><i class="bi bi-github" role="img">
@@ -131,53 +133,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Soccer Video Analysis with Roboflow</h1>
-</div>
+<h1 class="title">Soccer Tracking &amp; xG Modeling</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Sports Analytics</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Using detailed player tracking data and machine learning to model expected goals (xG) and reveal tactical insights.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 1, 2025</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core Idea</h2>
-<p><a href="https://github.com/HansK04" target="_blank" class="github-button"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16" class="github-icon"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path> </svg> View on GitHub </a></p>
-<style>
-.github-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: 1px solid #24292f;
-  color: #24292f;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.2s ease;
-  background-color: white;
-}
-
-.github-button:hover {
-  background-color: #f6f8fa;
-  transform: translateY(-1px);
-}
-
-.github-button:active {
-  transform: translateY(0);
-  background-color: #ebedf0;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.github-icon {
-  height: 1em;
-}
-</style>
+<section id="soccer-tracking-expected-goals-xg-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="soccer-tracking-expected-goals-xg-modeling">⚽ Soccer Tracking &amp; Expected Goals (xG) Modeling</h2>
 <p>This project explores how data science can deepen our understanding of football tactics and performance.</p>
 <p>Using detailed player tracking data and event logs, I built an <strong>expected goals (xG)</strong> model to estimate the likelihood of each shot resulting in a goal. The project covers:</p>
 <ul>
@@ -189,7 +175,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Visualizations to explain spatial patterns and shot quality</li>
 </ul>
-<p>The goal is to bridge advanced analytics and the game’s intuitive flow, offering <strong>coaches, analysts, and fans</strong> deeper insights into attacking efficiency and defensive weaknesses.</p>
 <hr>
 </section>
 <section id="technical-highlights" class="level2">
@@ -217,10 +202,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="whats-next" class="level2">
 <h2 class="anchored" data-anchor-id="whats-next">📌 <strong>What’s next</strong></h2>
 <ul>
-<li><p>Expand to multi-season data for more robust trends</p></li>
-<li><p>Integrate tracking data to analyze off-ball movement</p></li>
-<li><h2 id="develop-a-web-app-for-interactive-exploration" class="anchored">Develop a web app for interactive exploration</h2></li>
+<li>Expand to multi-season data for more robust trends</li>
+<li>Integrate tracking data to analyze off-ball movement</li>
+<li>Develop a web app for interactive exploration</li>
 </ul>
+<hr>
+</section>
+<section id="project-repository" class="level2">
+<h2 class="anchored" data-anchor-id="project-repository">🔗 <strong>Project Repository</strong></h2>
+<p><a href="https://github.com/yourusername/yourprojectrepo"><img src="https://img.shields.io/badge/Project%20Repo-GitHub-181717?logo=github&amp;style=flat&amp;logoColor=white.png" class="img-fluid" alt="GitHub"></a> s</p>
+<hr>
 
 
 </section>
